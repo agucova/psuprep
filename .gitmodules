@@ -1,0 +1,3 @@
+[submodule "resumen"]
+	path = resumen
+	url = git@github.com:agucova/resumen-psumat.git
