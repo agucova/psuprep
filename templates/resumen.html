@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Generar Resumen
+{% endblock %}
+
+{% block main %}
+    <form id="secciones" action="/resumen" method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Incl.</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for seccion in secciones["numeros"] %}
+              <tr>
+                <th scope="row">{{loop.index}}</th>
+                <td>{{seccion["titulo"]}}</td>
+                <td>{{seccion["descripcion"]}}</td>
+                <td><div class="form-check">
+                        <input class="form-check-input position-static" type="checkbox" name="secciones[]" value="{{seccion["id"]}}">
+                      </div></td>
+              </tr>
+            {% endfor %}
+        </table>
+        <button class="btn btn-primary" type="submit">Generar Resumen</button>
+    </form>
+{% endblock %}

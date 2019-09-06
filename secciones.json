@@ -1,0 +1,22 @@
+{
+    "numeros": [
+        {
+            "titulo": "Conjuntos Númericos",
+            "id": "conjuntos",
+            "descripcion": "",
+            "niveles": ""
+        },
+        {
+            "titulo": "Potencias",
+            "descripcion": "",
+            "id": "potencias",
+            "niveles": ""
+        },
+        {
+            "titulo": "Raices",
+            "descripcion": "",
+            "id": "raices",
+            "niveles": ""
+        }
+    ]
+}
