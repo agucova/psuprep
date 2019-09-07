@@ -18,6 +18,5 @@ def compilarResumen(id, secciones, pedido):
     print(lpedido)
     run("cp -r resumen/* cache/" + id + "/", shell=True)  # OPTIMIZAR WILDCARD
     comp = run(["pdflatex", lpedido], cwd=os.getcwd() + "/cache/" + id)
-    limpiarResumen.schedule(args=(id, ),
-                            delay=120)  # Borrar resumen en 120 segundos.
-    return True if comp.returncode else False
+    limpiarResumen.schedule(args=(id,), delay=120)  # Borrar resumen en 120 segundos.
+    return bool(comp.returncode)

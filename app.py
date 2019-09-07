@@ -1,11 +1,20 @@
-from flask import Flask, flash, jsonify, redirect, render_template, request, session, send_from_directory, safe_join
-import json, random
+from flask import (
+    Flask,
+    jsonify,
+    redirect,
+    render_template,
+    request,
+    session,
+    send_from_directory,
+    safe_join,
+)
 from subprocess import run
-import os
-from glob import glob
-
 from tasksc import tareas
 from tasks import compilarResumen
+import json
+import random
+import os
+
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
@@ -33,12 +42,12 @@ def generarResumen(secciones, pedido):
     return (id, resumen)
 
 
-@app.route('/')
+@app.route("/")
 def hello_world():
     return "Hi there."
 
 
-@app.route('/resumen', methods=["GET", "POST"])
+@app.route("/resumen", methods=["GET", "POST"])
 def resumen():
     with open("secciones.json") as seccionesf:
         secciones = json.load(seccionesf)
@@ -59,9 +68,9 @@ def resumen():
         return render_template("resumen.html", secciones=secciones)
 
 
-@app.route('/descargar', methods=["GET"])
+@app.route("/descargar", methods=["GET"])
 def descargar():
-    id = request.args.get('id').strip()  # SANITIZAR
+    id = request.args.get("id").strip()  # SANITIZAR
     if id is None:
         return "401"
     elif not os.path.exists("cache/" + id):
@@ -69,6 +78,6 @@ def descargar():
     # Se debe reemplazar esta condición por una comprobación directa a Huey.
     elif not os.path.exists("cache/" + id + "/main.pdf"):
         return render_template("sigue-generando.html")
-    return send_from_directory(os.getcwd() + "/cache/" + id,
-                               "main.pdf",
-                               as_attachment=True)
+    return send_from_directory(
+        os.getcwd() + "/cache/" + id, "main.pdf", as_attachment=True
+    )
