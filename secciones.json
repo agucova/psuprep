@@ -3,19 +3,22 @@
         {
             "titulo": "Conjuntos Númericos",
             "id": "conjuntos",
+            "eje": "numeros",
             "descripcion": "",
             "niveles": ""
         },
         {
             "titulo": "Potencias",
-            "descripcion": "",
             "id": "potencias",
+            "eje": "numeros",
+            "descripcion": "",
             "niveles": ""
         },
         {
             "titulo": "Raices",
-            "descripcion": "",
             "id": "raices",
+            "eje": "numeros",
+            "descripcion": "",
             "niveles": ""
         }
     ]

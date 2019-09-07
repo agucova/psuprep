@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Generando Resumen
+{% endblock %}
+
+{% block main %}
+<div class="alert alert-warning" role="alert">
+    <h4 class="alert-heading">Generando!</h4>
+    <p>Tu resumen sigue generándose y está demorando un poco más de lo normal. Esta página seguirá resfrescándose automáticamente, si toma mas de 5 minutos contáctanos. Recuerda que somos un proyecto abierto y gratuito, por lo que cualquier donación o ayuda en el desarrollo es muy apreciada.</p>
+    <hr>
+    <div style="width: 5em; height: 5em" class="spinner-border" role="status">
+        <span class="sr-only">Generando...</span>
+    </div>
+</div>
+<script type="text/javascript">
+setTimeout(function(){
+    window.location = window.location
+}, 10000);
+</script>
+{% endblock %}

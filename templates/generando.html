@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Generando Resumen
+{% endblock %}
+
+{% block main %}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Generando!</h4>
+    <p>Tu resumen está siendo generado, lo que suele tardar no mas de un minuto. Recuerda que somos un proyecto abierto y gratuito, por lo que cualquier donación o ayuda en el desarrollo es muy apreciada.</p>
+    <hr>
+    <p class="mb-0">Serás redirigido automáticamente a la página de descarga en <b><span id="cuentaregresiva">60</span> segundos</b>, aunque también puedes apretar <a href="{{ link }}">aquí</a> para ir directamente.</p>
+</div>
+<script type="text/javascript">
+    var segundos = 60;
+    
+    function cuentaregresiva() {
+        segundos = segundos - 1;
+        if (segundos < 0) {
+            window.location = "{{ link }}";
+        } else {
+            document.getElementById("cuentaregresiva").innerHTML = segundos;
+            window.setTimeout("cuentaregresiva()", 1000);
+        }
+    }
+    
+    cuentaregresiva();
+    
+</script>
+{% endblock %}
