@@ -1,25 +1,121 @@
 {
     "numeros": [
         {
-            "titulo": "Conjuntos Númericos",
-            "id": "conjuntos",
-            "eje": "numeros",
+            "titulo": "Números Naturales",
+            "id": "naturales",
             "descripcion": "",
             "niveles": ""
+        },
+        {
+            "titulo": "Números Enteros",
+            "id": "enteros",
+            "descripcion": "",
+            "niveles": ""
+        },
+        {
+            "titulo": "Números Racionales",
+            "id": "racionales",
+            "descripcion": "",
+            "niveles": ""
+        },
+        {
+            "titulo": "Números Decimales",
+            "id": "decimales",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Números Complejos",
+            "id": "complejos",
+            "descripcion": ""
         },
         {
             "titulo": "Potencias",
             "id": "potencias",
-            "eje": "numeros",
-            "descripcion": "",
-            "niveles": ""
+            "descripcion": ""
         },
         {
-            "titulo": "Raices",
+            "titulo": "Raíces",
             "id": "raices",
-            "eje": "numeros",
-            "descripcion": "",
-            "niveles": ""
+            "descripcion": ""
+        },
+        {
+            "titulo": "Logaritmos",
+            "id": "logaritmos",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Interés Simple y Compuesto",
+            "id": "interes",
+            "descripcion": ""
+        }
+    ],
+    "algebra": [
+        {
+            "titulo": "Factorización",
+            "id": "factorizacion",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Dominio y Recorrido",
+            "id": "domyrec",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Inyectividad y Epiyectividad",
+            "id": "inyectividad",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Función Afín",
+            "id": "fafin",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Función Potencia",
+            "id": "fpotencia",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Función Cuadrática",
+            "id": "fcuadratica",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Función Exponencial",
+            "id": "fexponencial",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Función Logarítmica",
+            "id": "flogaritmica",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Sistemas de Ecuaciones",
+            "id": "sistemas",
+            "descripcion": ""
+        }
+    ],
+    "geometria": [
+        {
+            "titulo": "Rectas y Planos",
+            "id": "rectasyplanos",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Figuras Planas",
+            "id": "figurasplanas",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Circunferencia y Círculo",
+            "id": "circunferencia",
+            "descripcion": ""
+        },
+        {
+            "titulo": "Cuerpos Geométricos",
+            "id": "cuerpos",
+            "descripcion": ""
         }
     ]
 }

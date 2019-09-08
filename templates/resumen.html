@@ -16,15 +16,17 @@
                 </tr>
             </thead>
             <tbody>
-            {% for seccion in secciones["numeros"] %}
-              <tr>
-                <th scope="row">{{loop.index}}</th>
-                <td>{{seccion["titulo"]}}</td>
-                <td>{{seccion["descripcion"]}}</td>
-                <td><div class="form-check">
-                        <input class="form-check-input position-static" type="checkbox" name="secciones[]" value="{{seccion["id"]}}">
-                      </div></td>
-              </tr>
+            {% for nombre,seccion in secciones.items(): %}
+                {% for subseccion in seccion %}
+                <tr>
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{subseccion["titulo"]}}</td>
+                    <td>{{subseccion["descripcion"]}}</td>
+                    <td><div class="form-check">
+                            <input class="form-check-input position-static" type="checkbox" name="secciones[]" value="{{subseccion["id"]}}">
+                        </div></td>
+                </tr>
+              {% endfor %}
             {% endfor %}
         </table>
         <button class="btn btn-primary" type="submit">Generar Resumen</button>
