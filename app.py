@@ -1,16 +1,7 @@
-from flask import (
-    Flask,
-    jsonify,
-    redirect,
-    render_template,
-    request,
-    session,
-    send_from_directory,
-    safe_join,
-)
+from flask import Flask, render_template, request, send_from_directory,redirect
 from subprocess import run
 from tasksc import tareas
-from tasks import compilarResumen
+from tasks import compilar
 import json
 import random
 import os
@@ -18,6 +9,7 @@ import os
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
+rng = random.SystemRandom()
 
 # Desactivar cache
 @app.after_request
@@ -32,25 +24,26 @@ def after_request(response):
 run(["rm", "-rf", "./cache/"], cwd=os.getcwd())  # DANGEROUS
 os.makedirs("cache/", exist_ok=True)
 
-
+with open("secciones.json") as seccionesf:
+    secciones = json.load(seccionesf)
 # Generador de Resumenes, necesita mucha optimización
-def generarResumen(secciones, pedido):
-    id = str(random.randint(0, 999999))
-    os.makedirs("cache/" + id)
-    resumen = compilarResumen(id, secciones, pedido)
+def generar(secciones, pedido):
+    # TODO: Prevenir colisiones
+    identificador = str(rng.randint(0, 999999))
+    os.makedirs("cache/" + identificador)
+    resumen = compilar(identificador, secciones, pedido)
     print(resumen)
-    return (id, resumen)
+    return (identificador, resumen)
 
 
 @app.route("/")
 def hello_world():
-    return "Hi there."
+    # TODO: Hacer homepage
+    return redirect("/resumen")
 
 
 @app.route("/resumen", methods=["GET", "POST"])
 def resumen():
-    with open("secciones.json") as seccionesf:
-        secciones = json.load(seccionesf)
     if request.method == "POST":
         pedido = request.form.getlist("secciones[]")
         if pedido is None:
@@ -59,25 +52,24 @@ def resumen():
             subseccion = subseccion.strip()
             if not subseccion.isalpha():
                 return "400"
-        id, resumen = generarResumen(secciones, pedido)
-        if not id:
-            return "Error compilando."
-        link = "/descargar?id=" + id
+        identificador, resumen = generar(secciones, pedido)
+        if not identificador or not resumen:
+            return render_template("error.html")
+        link = "/descargar?id=" + identificador
         return render_template("generando.html", link=link)
-    else:
-        return render_template("resumen.html", secciones=secciones)
+    return render_template("resumen.html", secciones=secciones)
 
 
 @app.route("/descargar", methods=["GET"])
 def descargar():
-    id = request.args.get("id").strip()  # SANITIZAR
-    if id is None:
+    identificador = request.args.get("id").strip()  # SANITIZAR
+    if identificador is None:
         return "401"
-    elif not os.path.exists("cache/" + id):
+    elif not os.path.exists("cache/" + identificador):
         return "404"
     # Se debe reemplazar esta condición por una comprobación directa a Huey.
-    elif not os.path.exists("cache/" + id + "/main.pdf"):
+    elif not os.path.exists("cache/" + identificador + "/main.pdf"):
         return render_template("sigue-generando.html")
     return send_from_directory(
-        os.getcwd() + "/cache/" + id, "main.pdf", as_attachment=True
+        os.getcwd() + "/cache/" + identificador, "main.pdf", as_attachment=True
     )

@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/home/agucova/anaconda3/bin/python",
+    "python.linting.prospectorEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false
+}
