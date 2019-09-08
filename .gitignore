@@ -468,3 +468,6 @@ TSWLatexianTemp*
 .history
 
 # End of https://www.gitignore.io/api/latex,flask,python,visualstudiocode
+
+# PERSONALIZADO - IMPORTANTE!
+cache/

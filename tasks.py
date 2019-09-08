@@ -19,6 +19,7 @@ def encontrar_ejes(secciones, identificadores):
 
 @tareas.task()
 def limpiar(identificador):
+    # Borra la carpeta de compilación del cache, llamado 120 segundos después por Huey.
     comp = run(["rm", "-rf", "cache/" + identificador])
     return bool(comp.returncode)
 
