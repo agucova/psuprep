@@ -1,5 +1,5 @@
 # Resumen/Cheatsheet PSU Matemática
-![Previsualización del Resumen](/previsualizacion.png)
+![Previsualización del Resumen](/resumen/previsualizacion.png)
 
 # Descarga
 Puedes descargar el cheatsheet como pdf apretando [aquí](https://github.com/agucova/resumen-psumat/raw/master/main.pdf), intenta imprimirlo sin márgenes y con color en A4 o carta.
