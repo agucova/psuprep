@@ -6,4 +6,5 @@ siunitx
 xcolor
 mdframed
 etoolbox
-expl3
+l3kernel
+l3packages
