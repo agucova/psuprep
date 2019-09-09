@@ -1,14 +1,9 @@
-babel-es
-tikz
+pgf
 mathpazo
 eulervm
 multicol
 wrapfig
 microtype
-graphicx
-amsfonts
-amsmath
-amssymb
 siunitx
 xcolor
 pgffor
