@@ -11,7 +11,7 @@
                 <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
-                <th scope="col">Descripcion</th>
+                <!-- <th scope="col">Descripcion</th> -->
                 <th scope="col">Incl.</th>
                 </tr>
             </thead>
@@ -21,10 +21,10 @@
                 <tr>
                     <th scope="row">{{loop.index}}</th>
                     <td>{{subseccion["titulo"]}}</td>
-                    <td>{{subseccion["descripcion"]}}</td>
+                    <!-- <td>{{subseccion["descripcion"]}}</td> -->
                     <td><div class="form-check">
                             <input class="form-check-input position-static" type="checkbox" name="secciones[]" value="{{subseccion["id"]}}">
-                        </div></td>
+                    </div></td>
                 </tr>
               {% endfor %}
             {% endfor %}
