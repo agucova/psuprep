@@ -2,6 +2,6 @@ pgf
 mathpazo
 eulervm
 wrapfig
-microtype
 siunitx
 xcolor
+mdframed
