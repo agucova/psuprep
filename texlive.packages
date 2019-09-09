@@ -6,4 +6,4 @@ siunitx
 xcolor
 mdframed
 etoolbox
-xpackages
+expl3
