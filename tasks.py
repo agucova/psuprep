@@ -26,19 +26,16 @@ def limpiar(identificador):
 
 @tareas.task()
 def compilar(identificador, secciones, pedido):
-    print("BPedido:", pedido)
     pedido = encontrar_ejes(secciones, pedido)
-    print("APedido:", pedido)
-    lpedido = r"\def\entrada{"
+    lpedido = ""
     for subseccion in pedido:
         if subseccion[1]: # Si comienza un eje
-            lpedido = lpedido + "{" + subseccion[1] + "}," # Agrega ese eje
-        lpedido = lpedido + "{" + subseccion[0] + "}," # Agrega la subseccion
-    lpedido = lpedido[:-1] + r"} \input{main}"
-    print("LPedido:", lpedido)
+            lpedido = lpedido + "secciones/" + subseccion[1] + ".md " # Agrega ese eje
+        lpedido = lpedido + "secciones/" + subseccion[0] + ".md " # Agrega la subseccion
     run(
         "cp -r resumen/* cache/" + identificador + "/", shell=True
     )  # OPTIMIZAR WILDCARD
-    comp = run(["pdflatex", lpedido], cwd=(os.getcwd() + "/cache/" + identificador))
+    args = "--standalone --from=markdown+yaml_metadata_block --template=tema.tex --pdf-engine=xelatex -o main.pdf variables.yml "
+    comp = run("pandoc " + args + lpedido, cwd=(os.getcwd() + "/cache/" + identificador), shell=True)
     limpiar.schedule(args=(identificador,), delay=120)  # Borrar resumen en 120 segundos.
     return bool(comp.returncode)

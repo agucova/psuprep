@@ -1,0 +1,267 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <meta name="author" content="Agustín Covarrubias" />
+  <meta name="keywords" content="PSU, matemáticas, resumen, cheatsheet" />
+
+  <style type="text/css">
+    .cheat-sheet {
+      box-sizing: border-box;
+
+      -webkit-column-width: 36em;
+      -moz-column-width: 36em;
+      column-width: 36em;
+
+      -webkit-column-gap: 2em;
+      -moz-column-gap: 2em;
+      column-gap: 2em;
+    }
+
+    h1 {
+      background: linear-gradient(Coral, Bisque);
+    }
+
+    h2 {
+      background-color: Bisque;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+
+  <title>Resumen PSU Matemáticas</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="cheat-sheet">
+<h1 id="álgebra-y-funciones">Álgebra y Funciones</h1>
+<h2 id="circunferencia-y-círculo">Circunferencia y Círculo</h2>
+<p>Dado un punto <span class="math inline">\(O\)</span>, y una distancia <span class="math inline">\(r\)</span>, la circunferencia está definida por el conjunto (infinito) de todos los puntos en el plano que están a una distancia <span class="math inline">\(r\)</span> de <span class="math inline">\(O\)</span>. Un círculo corresponde a la circunferencia junto con la región inscrita dentro de ella.<br />
+</p>
+<h3 id="ángulos-de-una-circunferencia">Ángulos de una Circunferencia</h3>
+<p><em>Ángulo de Centro:</em> Vértice en el centro, sus lados son dos radios.<br />
+<em>Ángulo Interior:</em> Vértice dentro de la circunferencia (no en ella!), sus lados son dos cuerdas.<br />
+<em>Ángulo Exterior:</em> Vértice fuera de la circunferencia, sus lados son dos secantes, una secante y una tangente, o dos tangentes.<br />
+<em>Angulo Inscrito:</em> Vértice en la circunferencia, los lados son dos secantes o cuerdas.<br />
+<em>Ángulo semiinscrito:</em> Vértice en la circunferencia, un lado secante y otro tangente.<br />
+</p>
+<h3 id="teoremas-de-ángulos">Teoremas de Ángulos</h3>
+<!-- Unidades: $360^{\circ} = \SI{2\pi}{\radian}$\ -->
+<p>Con <span class="math inline">\(\angle ACB\)</span> inscrito y <span class="math inline">\(\angle AOB\)</span> de centro, <span class="math inline">\(\measuredangle ACB = \frac{\measuredangle AOB}{2}\)</span>.<br />
+Análogamente, con <span class="math inline">\(\angle ABC\)</span> semiinscrito (tangente), y <span class="math inline">\(\angle BOC\)</span> de centro, <span class="math inline">\(\measuredangle ABC = \frac{\measuredangle BOC}{2}\)</span>.<br />
+La medida de un <strong>ángulo interior</strong> es igual a la semisuma de las medidas angulares (de centro) de los arcos formados por dicho ángulo: <span class="math display">\[\measuredangle APB = \frac{m(\stackrel\frown{AB}) + m(\stackrel\frown{CD})}{2}\]</span> Con <span class="math inline">\(\angle APB\)</span> interior, y <span class="math inline">\(\stackrel\frown{AB}\)</span> y <span class="math inline">\(\stackrel\frown{CD}\)</span> arcos formados por el.<br />
+De la misma forma, la medida de un <strong>ángulo exterior</strong> es igual a la semidiferencia de los ángulos de centro formados por el ángulo. (mayor primero) <span class="math display">\[\measuredangle APB = \frac{m(\stackrel\frown{AB}) - m(\stackrel\frown{CD})}{2}\]</span></p>
+<h3 id="teoremas-de-trazos">Teoremas de Trazos</h3>
+<p><strong>Teorema de las Cuerdas</strong></p>
+<figure>
+<img src="imagenes/teoremacuerdas.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p><strong>Teorema de las Secantes</strong></p>
+<figure>
+<img src="imagenes/teoremasecantes.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p><strong>Teorema de Secante-Tangente</strong></p>
+<figure>
+<img src="imagenes/teoremasecantetangente.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h2 id="imaginarios-y-complejos-mathbbc">Imaginarios y Complejos (<span class="math inline">\(\mathbb{C}\)</span>)</h2>
+<p><span class="math display">\[\begin{gathered}
+z = a + bi \text{ con } i = \sqrt{-1}\\
+\mid z \mid = \sqrt{a^2 + b^2}\\\end{gathered}\]</span></p>
+<h2 id="cuerpos-geométricos">Cuerpos Geométricos</h2>
+<p>Se denominan <strong>cuerpos o sólidos de revolución</strong> a aquellos objetos geométricos que pueden obtenerse mediante la rotación de una figura plana alrededor de una recta denominada eje. (en un espacio tridimensional, <em>e.j</em> un cilindro recto por rotación de un rectángulo, una esfera por un semicirculo, un cono por un triángulo rectángulo y un cono truncado por un trapecio rectángulo.)<br />
+Por el otro lado, un <strong>cuerpo de traslación</strong> es uno obtenido mediante la traslación de una figura plana. (<em>e.j</em> el prisma recto, generado por un polígono trasladado perpendicular a su plano; el cilindro recto generado por la traslación de un círculo).</p>
+<h3 id="prisma">Prisma</h3>
+<p>Un prisma es un cuerpo geométrico con dos caras paralelas y congruentes llamadas bases, con la restantes caras laterales siendo paralelogramos. Se nombran según los polígonos de sus bases.<br />
+<span class="math display">\[\begin{gathered}
+    A_{\text{lateral}} = h \cdot P_b\\
+    A_{\text{total}} = 2\cdot A_b + A_l\\
+    V = A_b\cdot h\end{gathered}\]</span></p>
+<h3 id="pirámide">Pirámide</h3>
+<p>Las pirámides son cuerpos que tienen como base un polígono cualquiera y sus caras laterales concurren en un punto llamado cúspide. Se nombran según el polígono de su base.<br />
+<span class="math display">\[\begin{aligned} 
+    V = \frac{1}{3}A_b\cdot h
+    \end{aligned}\]</span></p>
+<h3 id="cilindro">Cilindro</h3>
+<p>El cilindro recto es el cuerpo generado al girar un rectángulo en torno a la recta que contiene a uno de sus lados, o bien al traslador un círculo de forma perpendicular a un plano que contiene la base. Este cuerpo queda limitado por una superficie curva llamado manto (label) y dos supericies planas circulares, llamadas bases.</p>
+<p><span class="math display">\[\begin{gathered}
+    A_{\text{lateral}} = 2\pi rh\\
+    A_{\text{basal}} = \pi r^2\\
+    A_{\text{total}} = 2\pi rh + 2\pi r^2 \equiv 2\pi r(h+r)\\
+    V = \pi r^2h\end{gathered}\]</span></p>
+<h3 id="cono">Cono</h3>
+<p>Un cono recto es el cuerpo generado al girar un triángulo rectángulo en torno a la recta que contiene uno de sus catetos. La hipotenusa de tal triángulo se llama generatriz. (<span class="math inline">\(g\)</span>)</p>
+<p><span class="math display">\[\begin{split} 
+        &amp;g = \sqrt{r^2 + h^2}\\
+        A_{\text{total}} &amp;= A_b + A_l = \pi r^2 + \pi rg \\
+        &amp;= \pi r(r + \sqrt{r^2 + h^2})
+    \end{split}\]</span> <span class="math display">\[\begin{aligned} 
+        V = \frac{1}{3}\pi r^2h
+    \end{aligned}\]</span></p>
+<h3 id="esfera">Esfera</h3>
+<p>La esfera es el cuerpo generado al girar un semicírculo en torno a la recta que contiene al díametro. También puede ser descrito como un conjunto de todos los puntos en el espacio cuya distancia a un punto fijo, llamado centro, es menor o igual a su radio.</p>
+<p><span class="math display">\[\begin{split} 
+        A &amp;= 4\pi r^2\\
+        V &amp;= \frac{4}{3} \pi r^3
+    \end{split}\]</span></p>
+<h2 id="decimales">Decimales</h2>
+<p><span class="math display">\[\begin{gathered}
+0,\overline{1} = \frac{1}{9}\\
+0,\overline{36} = \frac{36}{96}\\
+1,23\overline{4} = \frac{1234 -123}{900}\\\end{gathered}\]</span></p>
+<h2 id="dominio-y-recorrido">Dominio y Recorrido</h2>
+<p>El <em>dominio</em> de definición de una función es el conjunto de valores de entrada, o argumentos, para la cual una cierta función está definida. Análogamente, el conjunto de valores de salida, es denominado <em>rango o imagen</em>, que es un subconjunto del codominio de la función. Gráficamente, el dominio está representado por el eje x de un plano cartesiano, y el rango por el eje y.<br />
+Para una función <span class="math inline">\(f: X \rightarrow Y\)</span>, donde el conjunto <span class="math inline">\(X\)</span> es el dominio, e <span class="math inline">\(Y\)</span> el codominio, el rango está definido por <span class="math inline">\(\left\{ f(x) | x \in X \right\}\)</span>, y siempre es un subconjunto de <span class="math inline">\(Y\)</span>. Cuando el rango es todo el conjunto del codominio, la función es sobreyectiva.<br />
+El rango también se puede encontrar en el dominio de la función inversa, es decir, invirtiendo la variable independiente con la dependiente, y resolviendo el dominio.<br />
+</p>
+<h2 id="enteros-mathbbz">Enteros (<span class="math inline">\(\mathbb{Z}\)</span>)</h2>
+<p><span class="math display">\[\begin{gathered}
+a &lt; b \rightarrow -a &gt; b\\
+a &lt; 0 \rightarrow -a &gt; 0\\
+|x - y| = |y - x|\\
+a &lt; b \land c &lt; b \rightarrow b + d &gt; a + c\\\end{gathered}\]</span></p>
+<h2 id="factorización">Factorización</h2>
+<p><span class="math inline">\((a \pm b \pm c)^2 = a^2 + b^2 + c^2 \pm 2ab \pm 2ac \pm 2bc\)</span><br />
+<span class="math inline">\((a \pm b)^3 = a^3 \pm 3a^2b + 3ab^2 \pm b^3\)</span><br />
+<span class="math inline">\(a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)\)</span><br />
+<span class="math inline">\((x + p)(x + q) = x^2 + x(p + q) + pq\)</span><br />
+<span class="math inline">\(a (a + b + 1) = a^2 + ab + a\)</span><br />
+</p>
+<h2 id="función-afín">Función Afín</h2>
+<p>Una función afin tiene una <strong>forma principal</strong> de <span class="math inline">\(y = mx + n\)</span>, donde se denomina lineal si <span class="math inline">\(n=0\)</span>, y una <strong>forma general</strong> de <span class="math inline">\(ax + by = 0\)</span>.<br />
+Para la forma general, <span class="math inline">\(m = -\frac{a}{b}\)</span> y <span class="math inline">\(n = -\frac{c}{b}.\)</span><br />
+Punto pendiente: <span class="math inline">\(y - y_1 = m(x - x_1)\)</span><br />
+Dos Puntos: <span class="math inline">\(\frac{y-y_1}{x-x_1} = \frac{y_2-y_1}{x_2-x_1}\)</span><br />
+Distancia punto-recta: <span class="math inline">\(\frac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}.\)</span><br />
+<em>Nota:</em> <span class="math inline">\(m = \tan \alpha\)</span></p>
+<h2 id="función-cuadrática">Función Cuadrática</h2>
+<p>Formatos:<br />
+<span class="math inline">\(f(x) = a x^2 + b x + c \,\!\)</span> llamada <strong>forma estándar</strong><br />
+<span class="math inline">\(f(x) = a(x - r_1)(x - r_2)\,\!\)</span>, llamada <strong>forma factorizada</strong>, con <span class="math inline">\(r_1\)</span> y <span class="math inline">\(r_2\)</span> raíces.<br />
+<span class="math inline">\(f(x) = a(x - h)^2 + k \,\!\)</span>, llamada <strong>forma de vértice</strong>, con un vértice <span class="math inline">\((h, k)\)</span>.<br />
+Vértice: <span class="math inline">\((\frac{-b}{2a}),(-\frac{b^2-4ac}{4a})\)</span><br />
+<span class="math inline">\(x_1 + x_2 = \frac{-b}{a}\)</span><br />
+<span class="math inline">\(x_1 \cdot x_2 = \frac{c}{a}\)</span><br />
+</p>
+<h2 id="función-exponencial">Función Exponencial</h2>
+<p>Una función exponencial usualmente está descrita en la forma <span class="math inline">\((x) = ab^x\)</span> con b un número real positivo y <span class="math inline">\(x\)</span> exponente. De forma simplificada <span class="math inline">\(f(x) = b^x\)</span>, donde si <span class="math inline">\(b &gt; 1\)</span> la función es creciente (hacia la derecha) y cuando <span class="math inline">\(0 &lt; b &lt; 1\)</span> la función es decreciente.<br />
+</p>
+<h2 id="figuras-planas">Figuras Planas</h2>
+<h3 id="congruencia-y-semejanza">Congruencia y Semejanza</h3>
+<p>Se dice que dos ángulos son congruentes si tienen la misma medida.</p>
+<p>De la misma forma, dos segmentos de recta son congruentes si miden lo mismo. Por extensión, dos figuras planas son llamadas <strong>congruentes</strong> si tienen <strong>exactamente</strong> la misma forma y tamaño, es decir, si y solo si, todos sus ángulos interiores y lados son congruentes entre sí. En este contexto, entre dos figuras, los vértices, lados y ángulos que coinciden (homologamente) son llamados <strong>correspondientes</strong>. La congruencia entre objetos se denota &quot;<span class="math inline">\(\cong\)</span>&quot;.</p>
+<p>Por el otro lado, dos figuras son <strong>semejantes</strong> (<span class="math inline">\(\sim\)</span>) si tienen la misma forma, pero no necesariamente el mismo tamaño (la congruencia es una clase de semejanza), es decir, si todos sus ángulos interiores correspondientes son iguales y la razón entre las medidas de sus lados es constante.</p>
+<h3 id="triángulos">Triángulos</h3>
+<p><strong>Criterios de Congruencia</strong> <em>Lado, Lado, Lado (LLL)</em>: Todos los lados respectivos son congruentes entre ellos. <em>Lado, Ángulo, Lado (LAL)</em>: Dos lados respectivos son congruentes, al igual que el ángulo comprendido entre ellos. <em>Ángulo, Lado, Ángulo (ALA)</em>: Dos ángulos respectivos son congruentes, al igual que el lado entre ellos.</p>
+<p><strong>Criterios de Semejanza</strong> <em>Ángulo, Ángulo (AA o AA)</em>: Todos los ángulos son iguales entre ellos (con dos basta por las propiedades de un triángulo). <em>Lado, Ángulo, Lado (LAL)</em>: Dos lados tienen medidas <strong>proporcionales</strong> y los ángulos comprendidos entre ellos son congruentes. <em>Lado, Lado, Lado (LLL)</em>: Todos los lados correspondientes son <strong>proporcionales</strong>, es decir hay una constante para la relación entre cada par de lados.</p>
+<p><strong>Teorema de Euclides</strong><br />
+En un triángulo <strong>rectángulo</strong>, la altura de la hipotenusa divide al triángulo en dos triángulos semejantes entre ellos, al igual que semejantes al triángulo original. De esto se deriva que el cuadrado de tal altura es igual al producto entre las protecciones de los catetos sobre la hipotenusa: <img src="imagenes/euclides.jpg" alt="image" /> <span class="math display">\[{h_c}^2 = x \cdot y\]</span> También de esto se deriva que el cuadrado de un cateto es igual al producto de la hipotenusa y su proyección del cateto.</p>
+<p><span class="math display">\[a^2 = c \cdot y; b^2 = c \cdot x\]</span> <strong>Teorema de Pitagoras</strong><br />
+En un triángulo <strong>rectángulo</strong>, el área del cuadrado construido sobre la hipotenusa es igual a la suma de las áreas de los cuadrados sobre los catetos. <img src="imagenes/pitagoras.png" alt="image" /></p>
+<p>De esto deriva la <strong>ecuación pitagórica</strong>: <span class="math display">\[a^2 + b^2 = c^2\]</span> Es importante notar que esta es un teorema <strong>recíproco</strong>, es decir, cuando esta ecuación se cumple en un triángulo dado se puede afirmar que es rectángulo.<br />
+</p>
+<h2 id="función-logarítmica">Función Logarítmica</h2>
+<p>Siguen la forma general <span class="math inline">\(f(x) = log_b{x}\)</span>, y son inversas de las funciones exponenciales, siendo simétricas con respecto a <span class="math inline">\(y = x\)</span>.<br />
+</p>
+<p><img src="imagenes/funcionlogaritmica1.png" alt="image" /> \ <img src="imagenes/funcionlogaritmica2.png" alt="image" /></p>
+<h2 id="función-potencia">Función Potencia</h2>
+<p>Clase de la que pertenece la función cuadrática, está definida en forma general por <span class="math inline">\(f(x) = ax^n\)</span> con <span class="math inline">\(n \in \mathbb{N} - \{1\}\)</span> y <span class="math inline">\(a \in \mathbb{R}\)</span>. Cuando <span class="math inline">\(n\)</span> es <strong>par</strong>, entonces la función toma la forma de una parábola, y cuando es <strong>impar</strong>, toma una forma similar a la cúbica.</p>
+<h1 id="geometría">Geometría</h1>
+<h2 id="interés-simple-y-compuesto">Interés Simple y Compuesto</h2>
+<p><strong>Interés Simple:</strong> <span class="math inline">\(C_f = C_i(1+n\cdot i\%)\)</span><br />
+<strong>Interés Compuesto:</strong> <span class="math inline">\(C_f = C_i (1 + i \%)^n\)</span><br />
+Con <span class="math inline">\(C_i\)</span> capital inicial, <span class="math inline">\(C_f\)</span> capital final, <span class="math inline">\(i\%\)</span> tasa de interés y <span class="math inline">\(n\)</span> el número de periodos.<br />
+<em>Advertencia:</em> Es clave convertir los períodos de tiempo si es necesario (<em>e.j</em> <span class="math inline">\(1\)</span> año <span class="math inline">\(= 12\)</span> meses)<br />
+</p>
+<h2 id="inyectividad-y-epiyectividad">Inyectividad y Epiyectividad</h2>
+<p>Una función <span class="math inline">\(f(x)\)</span> es <em>inyectiva</em> cuando, <span class="math inline">\(\forall a,b \in X, \;\; f(a)=f(b) \Rightarrow a=b\)</span> , es decir cuando nunca mapea elementos distintos de su <em>Dominio</em> a un mismo elemento del <em>Codominio</em>.</p>
+<p>Análogamente, se dice que una función f(x) es <em>sobreyectiva</em>, o epiyectiva cuando, <span class="math inline">\(\forall y \in Y, \, \exists x \in X, \;\; f(x)=y\)</span>, es decir, que para cada elemento <span class="math inline">\(y\)</span> en el codominio <span class="math inline">\(Y\)</span>, hay al menos un elemento <span class="math inline">\(x\)</span> en el dominio <span class="math inline">\(X\)</span> de forma que <span class="math inline">\(f(x) = y\)</span>.<br />
+<img src="imagenes/inyectividad.png" alt="image" /><br />
+<img src="imagenes/sobreyectividad.png" alt="image" /></p>
+<h2 id="logaritmos-b-0">Logaritmos (<span class="math inline">\(b &gt; 0\)</span>)</h2>
+<p><span class="math inline">\(\log_b(x) = y \quad \leftrightarrow \quad b^y = x.\)</span><br />
+<span class="math inline">\(\log_b(xy) = \log_b x + \log_b y\)</span><br />
+<span class="math inline">\(\log_b \!\frac{x}{y} = \log_b x - \log_b y\)</span><br />
+<span class="math inline">\(\log_b\left(x^p\right) = p \log_b x\)</span><br />
+<span class="math inline">\(\log_b \sqrt[p]{x} = \frac{\log_b x}{p}\)</span><br />
+<span class="math inline">\(\log_b x = \frac{\log_k x}{\log_k b}\)</span><br />
+<span class="math inline">\(\log_b \frac{1}{x} = -\log_b x\)</span></p>
+<h2 id="naturales-mathbbn">Naturales (<span class="math inline">\(\mathbb{N}\)</span>)</h2>
+<p><em>MCM (mínimo común múltiplo):</em> menor Nº entero positivo que es divisible por cada uno de los números (sin resto).<br />
+<em>MCD (máximo común divisor):</em> mayor Nº entero positivo que divide cada uno de los números (sin resto).<br />
+</p>
+<h1 id="números">Números</h1>
+<h2 id="potencias">Potencias</h2>
+<p><span class="math inline">\((-a)^2 = a^2; -a^2 = -(a^2)\)</span><br />
+<span class="math inline">\(b^{m + n} = b^m \cdot b^n \left(b^m\right)^n = b^{m \cdot n} (b \cdot c)^n = b^n \cdot c^n\)</span> <span class="math inline">\(0^0 \notin \mathbb{R}\)</span><br />
+No son conmutativas (e.j <span class="math inline">\(2^3 = 8 \neq 3^2 = 9\)</span>) ni asociativas (e.j <span class="math inline">\((2^3)^4) = 8^4 \neq 2^{(3^4)} = 2^{81}\)</span>).<br />
+Sin paréntesis el orden de operación es de arriba hacia abajo (o dextro-asociativo):<br />
+<span class="math inline">\(b^{p^q} = b^{\left(p^q\right)} \not\equiv \left(b^p\right)^q = b^{p q}\)</span><br />
+</p>
+<h2 id="racionales-mathbbq">Racionales (<span class="math inline">\(\mathbb{Q}\)</span>)</h2>
+<p><em>Proporcionalidad Directa: (lineal)</em><br />
+<span class="math display">\[y = kx \leftrightarrow y \propto x \text{ con } k = \frac{y}{x}\]</span></p>
+<p><em>Proporcionalidad Inversa: (híperbola rectangular)</em><br />
+<span class="math display">\[y = \frac{k}{x} \leftrightarrow k = xy\]</span><br />
+</p>
+<h2 id="raíces">Raíces</h2>
+<p><span class="math inline">\(a ^ {\frac{p}{q}} \equiv \sqrt[q]{a^p}\)</span><br />
+<span class="math inline">\(\sqrt[p]{a^q} \equiv (\sqrt[p]{a})^q\)</span><br />
+<span class="math inline">\(\sqrt{x^2} = \mid x \mid\)</span><br />
+<span class="math inline">\(\sqrt[p]{\sqrt[q]{a}} = \sqrt[pq]{a}\)</span><br />
+Para radicandos <span class="math inline">\(a, b\)</span> positivos: <span class="math inline">\(\sqrt[n]{ab} \equiv \sqrt[n]{a} \sqrt[n]{b}\)</span><br />
+<span class="math inline">\(\sqrt[n]{\frac{a}{b}} \equiv \frac{\sqrt[n]{a}}{\sqrt[n]{b}}\)</span><br />
+Sutilezas con radicandos negativos: <span class="math inline">\(\sqrt{-1}\times\sqrt{-1} \neq \sqrt{-1 \times -1} = 1,\quad\)</span> sino <span class="math inline">\(\quad\sqrt{-1}\times\sqrt{-1} = i \times i = i^2 = -1.\)</span><br />
+</p>
+<h2 id="rectas-y-planos">Rectas y Planos</h2>
+<p>Un conjunto de puntos son llamados <strong>colineales</strong> si pertenecen a una misma recta, lo que puede ser verificado por la igualdad constituida entre las pendientes entre cada par. En álgebra lineal, también se puede verificar comprobando si el área del polígono formado entre los puntos es cero. Trivialmente, todo par de puntos en un plano son colineales, ya que forman una línea.<br />
+Dos rectas en un mismo plano son llamadas <strong>coincidentes</strong> si están constituidas por el mismo conjunto de puntos, <strong>paralelas</strong> si no tienen ningún punto en común (igual pendiente), <strong>secantes</strong> si solo se intersectam en un punto y <strong>perpendiculares</strong> si forman entre ellas ángulos rectos (<span class="math inline">\(m_1 \cdot m_2 = -1\)</span>).<br />
+</p>
+<h3 id="teorema-de-thales">Teorema de Thales</h3>
+<p>Si dos o más <strong>rectas paralelas</strong> se intersectan por dos transversales, entonces las medidas de los segmentos determinados sobre las secantes son <strong>proporcionales</strong>.</p>
+<p><span style="background-color: white"><img src="imagenes/teoremathales.png" alt="image" /></span></p>
+<h3 id="teorema-particular-de-thales">Teorema Particular de Thales</h3>
+<p>Establece que un segmento de recta paralelo a un lado de un triángulo y que corta a los otros dos, determina en estos últimos segmentos proporcionales. Es importamente mencionar de que el teorema es <strong>recíproco</strong>.</p>
+<figure>
+<img src="imagenes/teoremathalesparticular.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h3 id="ecuación-vectorial-y-paramétrica">Ecuación Vectorial y Paramétrica</h3>
+<p>Una recta puede ser expresada en la forma de una <strong>ecuación vectorial</strong> donde se encuentra definida por un punto de ella, y su dirección. Cualquier vector con la misma dirección (ángulo o pendiente) con respecto a la recta, es llamado <strong>vector director</strong> (<span class="math inline">\(\vec{d}\)</span>), y asimismo un vector de un punto P perteneciente a la recta, es llamado <strong>vector de posición</strong> (<span class="math inline">\(\vec{P_0}\)</span>).<br />
+De esta forma, la ecuación vectorial de la recta está dada por:<br />
+<span class="math inline">\(\vec{p} = \vec{p_0} + \lambda\vec{d}\)</span>, donde <span class="math inline">\(\lambda \in \mathbb{R}\)</span> y <span class="math inline">\(\vec{p}\)</span> es un vector representando cualquier punto en la recta.</p>
+<p>Al resolver la forma general tal que quede expresada en un solo vector, se pueden generar un conjunto de <strong>ecuaciones paramétricas</strong> (con parámetro <span class="math inline">\(\lambda\)</span>) que determinan la recta a través de cada una de sus componentes (como se expresan en el vector resultante).<br />
+En el plano, la ecuación vectorial puede ser expresada como:</p>
+<p><span class="math display">\[(x, y) = (x_0, y_0) + \lambda(d_x,d_y) \text{ con } \lambda \in \mathbb{R}\]</span></p>
+<p>Y paramétricamente:  Teniendo una ecuación paramétrica, podemos despejar el parámetro (<span class="math inline">\(\lambda\)</span>) en cada uno, y despues igualar las expresiones equivalentes del parámetro para obtener una <strong>ecuación continua</strong> de la forma: <span class="math display">\[\begin{split}
+    \lambda &amp;= \frac{x - x_0}{d_x}\\
+    \lambda &amp;= \frac{y - y_0}{d_y}\\
+    \frac{x-x_0}{d_x} &amp;= \frac{y-y_0}{d_y}
+\end{split}\]</span></p>
+<h2 id="sistemas-de-ecuaciones-lineales">Sistemas de Ecuaciones Lineales</h2>
+<p>Un <strong>sistema de ecuaciones lineales</strong> o sistema lineal es una colección de dos o mas ecuaciones lineales (nótese, uso no análogo a afín/lineal) que involucra el mismo conjunto de variables. Una <strong>solución</strong> a tal sistema es una asignación de valores a las variables de forma de que todas se encuentren satisfechas.<br />
+</p>
+<h3 id="interpretación-geométrica">Interpretación Geométrica</h3>
+<p>Un sistema de ecuaciones lineales con dos incógnitas y dos ecuaciones pueden representarse como <strong>dos rectas en el plano</strong>, con sus respectivas intersecciones correspondiendo a las soluciones al sistema. <em>Nota:</em> Para tres variables, cada ecuación linear determina un plano en espacio tridimensional, y para <em>n</em> variables, cada ecuación lineal determina un hiperplano (un subespacio con una dimensión una menor que la de su espacio) en un espacio <em>n-</em>dimensional.</p>
+<h3 id="soluciones">Soluciones</h3>
+<p>Según la cantidad de soluciones, un sistema de ecuaciones lineales (en este caso. <span class="math inline">\(2\times2\)</span>) puede ser clasificado en:<br />
+<em>Compatible determinado:</em> Una solución, es decir, las rectas son secantes entre ellas (un punto de intersección).<br />
+<em>Compatible indeterminado:</em> Infinitas soluciones, es decir, las rectas son coincidentes.<br />
+<em>Incompatible:</em> Ninguna solución, ocurre cuando las rectas son paralelas (igual pendiente).<br />
+</p>
+    </div>
+  </div>
+</body>
+</html>

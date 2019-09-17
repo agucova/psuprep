@@ -6,16 +6,25 @@
 
 {% block main %}
     <form id="secciones" action="/resumen" method="post">
+        <div class="form-group">
+            <label for="formato"></label>
+            <select class="form-control" id="formato">
+            <option value="None" hidden>Formato</option>
+              <option value="USletter">Carta (US)</option>
+              <option value="A4Paper">A4</option>
+              <option disabled>Web</option>
+            </select>
+        </div>
         <table class="table">
-            <thead>
+            <thead class="">
                 <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <!-- <th scope="col">Descripcion</th> -->
-                <th scope="col">Incl.</th>
+                <th scope="col">Incluir</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-striped">
             {% for nombre,seccion in secciones.items(): %}
                 {% for subseccion in seccion %}
                 <tr>

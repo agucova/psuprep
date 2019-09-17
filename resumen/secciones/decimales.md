@@ -1,0 +1,7 @@
+Decimales
+---------
+
+$$\begin{gathered}
+0,\overline{1} = \frac{1}{9}\\
+0,\overline{36} = \frac{36}{96}\\
+1,23\overline{4} = \frac{1234 -123}{900}\\\end{gathered}$$
