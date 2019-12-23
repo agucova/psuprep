@@ -1,6 +1,6 @@
 ![PSUPrep](/static/logo.png)
 
-## Introduction - CS50's Final Projectst
+## Introduction - CS50's Final Project
 **PSUPrep** is a dynamic summary generator for the math university admission test in Chile (*Prueba de Selección Universitaria* or "PSU"). 
 
 The webapp allows students to generate on request a cheat sheet with their selected contents, this way they can easily print a small high-quality study aid (conventional cheat sheets for the test usually have around 20 pages).
