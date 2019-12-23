@@ -1,5 +1,4 @@
-Logaritmos ($b > 0$)
---------------------
+## Logaritmos ($b > 0$)
 
 $\log_b(x) = y \quad \leftrightarrow \quad b^y = x.$\
 $\log_b(xy) = \log_b x + \log_b y$\

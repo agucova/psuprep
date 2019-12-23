@@ -1,5 +1,4 @@
-Función Exponencial
--------------------
+## Función Exponencial
 
 Una función exponencial usualmente está descrita en la forma
 $(x) = ab^x$ con b un número real positivo y $x$ exponente. De forma

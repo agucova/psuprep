@@ -1,5 +1,4 @@
-Dominio y Recorrido
--------------------
+## Dominio y Recorrido
 
 El *dominio* de definición de una función es el conjunto de valores de
 entrada, o argumentos, para la cual una cierta función está definida.

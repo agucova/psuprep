@@ -1,5 +1,4 @@
-Imaginarios y Complejos ($\mathbb{C}$)
---------------------------------------
+## Imaginarios y Complejos ($\mathbb{C}$)
 
 $$\begin{gathered}
 z = a + bi \text{ con } i = \sqrt{-1}\\

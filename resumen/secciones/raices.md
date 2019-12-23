@@ -1,5 +1,4 @@
-Raíces
-------
+## Raíces
 
 $a ^ {\frac{p}{q}} \equiv \sqrt[q]{a^p}$\
 $\sqrt[p]{a^q} \equiv (\sqrt[p]{a})^q$\

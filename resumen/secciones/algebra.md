@@ -1,2 +1,1 @@
-Álgebra y Funciones
-===================
+# Álgebra y Funciones

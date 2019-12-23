@@ -1,5 +1,4 @@
-Naturales ($\mathbb{N}$)
-------------------------
+## Naturales ($\mathbb{N}$)
 
 *MCM (mínimo común múltiplo):* menor Nº entero positivo que es divisible
 por cada uno de los números (sin resto).\

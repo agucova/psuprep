@@ -1,5 +1,4 @@
-Función Afín
-------------
+## Función Afín
 
 Una función afin tiene una **forma principal** de $y = mx + n$, donde se
 denomina lineal si $n=0$, y una **forma general** de $ax + by = 0$.\

@@ -1,5 +1,4 @@
-Función Cuadrática
-------------------
+## Función Cuadrática
 
 Formatos:\
 $f(x) = a x^2 + b x + c \,\!$ llamada **forma estándar**\

@@ -1,5 +1,4 @@
-Rectas y Planos
----------------
+## Rectas y Planos
 
 Un conjunto de puntos son llamados **colineales** si pertenecen a una
 misma recta, lo que puede ser verificado por la igualdad constituida
@@ -50,15 +49,15 @@ En el plano, la ecuación vectorial puede ser expresada como:
 
 $$(x, y) = (x_0, y_0) + \lambda(d_x,d_y) \text{ con } \lambda \in \mathbb{R}$$
 
-Y paramétricamente: \begin{align}
+Y paramétricamente: \begin{align*}
       x &= x_0 + \lambda d_x\\
       y &= y_0 + \lambda d_y\\
       \lambda &\in \mathbb{R}
-      \end{align}
-Teniendo una ecuación paramétrica, podemos
-despejar el parámetro ($\lambda$) en cada uno, y despues igualar las
-expresiones equivalentes del parámetro para obtener una **ecuación
-continua** de la forma: $$\begin{split}
+      \end{align*}
+    Teniendo una ecuación paramétrica, podemos despejar el
+parámetro ($\lambda$) en cada uno, y despues igualar las expresiones
+equivalentes del parámetro para obtener una **ecuación continua** de la
+forma: $$\begin{split}
     \lambda &= \frac{x - x_0}{d_x}\\
     \lambda &= \frac{y - y_0}{d_y}\\
     \frac{x-x_0}{d_x} &= \frac{y-y_0}{d_y}

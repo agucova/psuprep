@@ -1,5 +1,4 @@
-Inyectividad y Epiyectividad
-----------------------------
+## Inyectividad y Epiyectividad
 
 Una función $f(x)$ es *inyectiva* cuando,
 $\forall a,b \in X, \;\; f(a)=f(b) \Rightarrow a=b$ , es decir cuando

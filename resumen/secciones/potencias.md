@@ -1,10 +1,8 @@
-Potencias
----------
+## Potencias
 
 $(-a)^2 = a^2; -a^2 = -(a^2)$\
-$b^{m + n} = b^m \cdot b^n
-\left(b^m\right)^n = b^{m \cdot n} 
-(b \cdot c)^n = b^n \cdot c^n$ $0^0 \notin \mathbb{R}$\
+$b^{m + n} = b^m \cdot b^n \left(b^m\right)^n = b^{m \cdot n} (b \cdot c)^n = b^n \cdot c^n$
+$0^0 \notin \mathbb{R}$\
 No son conmutativas (e.j $2^3 = 8 \neq 3^2 = 9$) ni asociativas (e.j
 $(2^3)^4) = 8^4 \neq 2^{(3^4)} = 2^{81}$).\
 Sin paréntesis el orden de operación es de arriba hacia abajo (o

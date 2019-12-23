@@ -1,5 +1,4 @@
-Función Potencia
-----------------
+## Función Potencia
 
 Clase de la que pertenece la función cuadrática, está definida en forma
 general por $f(x) = ax^n$ con $n \in \mathbb{N} - \{1\}$ y

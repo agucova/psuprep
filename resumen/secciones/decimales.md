@@ -1,5 +1,4 @@
-Decimales
----------
+## Decimales
 
 $$\begin{gathered}
 0,\overline{1} = \frac{1}{9}\\

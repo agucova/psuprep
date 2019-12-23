@@ -1,5 +1,4 @@
-Factorización
--------------
+## Factorización
 
 $(a \pm b \pm c)^2 = a^2 + b^2 + c^2 \pm 2ab \pm 2ac \pm 2bc$\
 $(a \pm b)^3 = a^3 \pm 3a^2b + 3ab^2 \pm b^3$\

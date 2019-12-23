@@ -1,5 +1,4 @@
-Sistemas de Ecuaciones Lineales
--------------------------------
+## Sistemas de Ecuaciones Lineales
 
 Un **sistema de ecuaciones lineales** o sistema lineal es una colección
 de dos o mas ecuaciones lineales (nótese, uso no análogo a afín/lineal)
@@ -12,10 +11,10 @@ todas se encuentren satisfechas.\
 Un sistema de ecuaciones lineales con dos incógnitas y dos ecuaciones
 pueden representarse como **dos rectas en el plano**, con sus
 respectivas intersecciones correspondiendo a las soluciones al sistema.
-*Nota:* Para tres variables, cada ecuación linear determina un plano en
+<!-- *Nota:* Para tres variables, cada ecuación linear determina un plano en
 espacio tridimensional, y para *n* variables, cada ecuación lineal
 determina un hiperplano (un subespacio con una dimensión una menor que
-la de su espacio) en un espacio *n-*dimensional.
+la de su espacio) en un espacio *n-*dimensional. -->
 
 ### Soluciones
 

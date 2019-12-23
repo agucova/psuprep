@@ -1,5 +1,4 @@
-Racionales ($\mathbb{Q}$)
--------------------------
+## Racionales ($\mathbb{Q}$)
 
 *Proporcionalidad Directa: (lineal)*\
 $$y = kx \leftrightarrow y \propto x \text{ con } k = \frac{y}{x}$$

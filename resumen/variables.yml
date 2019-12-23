@@ -23,6 +23,7 @@ geometry:
   - top=1cm
   - bottom=1cm
   - landscape
+
 # you can also add "landscape" to geometry if you want more than 2 columns
 
 # fiddle with these to increase readability

@@ -1,0 +1,23 @@
+install: install/python
+
+install/python:
+    pip install -r ./requirements.txt
+
+format:
+    black -t py37 .
+
+launch: launch/huey launch/gunicorn
+
+launch/dev: launch/huey launch/flask
+
+launch/huey:
+    huey_consumer -w4 app.tareas
+
+launch/gunicorn:
+    gunicorn app:app
+
+launch/flask:
+    FLASK_ENV=development
+    FLASK_DEBUG=1
+    FLASK_APP=app.py
+    flask run

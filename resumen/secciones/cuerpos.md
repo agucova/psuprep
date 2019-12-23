@@ -1,5 +1,4 @@
-Cuerpos Geométricos
--------------------
+## Cuerpos Geométricos
 
 Se denominan **cuerpos o sólidos de revolución** a aquellos objetos
 geométricos que pueden obtenerse mediante la rotación de una figura

@@ -1,5 +1,4 @@
-Circunferencia y Círculo
-------------------------
+## Circunferencia y Círculo
 
 Dado un punto $O$, y una distancia $r$, la circunferencia está definida
 por el conjunto (infinito) de todos los puntos en el plano que están a

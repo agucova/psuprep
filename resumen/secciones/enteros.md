@@ -1,5 +1,4 @@
-Enteros ($\mathbb{Z}$)
-----------------------
+## Enteros ($\mathbb{Z}$)
 
 $$\begin{gathered}
 a < b \rightarrow -a > b\\
