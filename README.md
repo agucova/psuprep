@@ -8,7 +8,7 @@ The webapp allows students to generate on request a cheat sheet with their selec
 ## Architecture
 [Heroku](https://psuprep.herokuapp.com/) hosts a web runner and a Redis database with a full TeXLive installation.
 
-When a request is made, Gunicorn acts as the HTTPS server and forwards requests, through WSGI, to Flask. When a compile request is made, Flask creates a task in the queue (huey) which starts pdflatex compilation through dynamic import of sections. Finally, the resulting PDF is sent to the user. 
+When a request is made, [Gunicorn](https://gunicorn.org/) acts as the HTTPS server and forwards requests, through WSGI, to Flask. When a compile request is made, Flask creates a task in the queue ([huey](https://github.com/coleifer/huey), using Redis) which starts PDFLaTeX compilation through dynamic import of sections. Finally, the resulting PDF is sent to the user. 
 
 
 ![Architecture](/static/arch.png)
