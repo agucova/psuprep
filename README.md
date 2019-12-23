@@ -16,4 +16,4 @@ When a request is made, [Gunicorn](https://gunicorn.org/) acts as the HTTPS serv
 ![Architecture](/static/arch.png)
 
 ## For the future
-At this moment the platform only supports PDF output, but I'm working on an experimental branch with a completely new generator engine using Pandoc, which would be able to output simple HTML instead. I also plan to add a file cache and increase accessiblity to the contents.
+At this moment the platform only supports PDF output, but I'm working on an experimental branch with a completely new generator engine using Pandoc, which would be able to output simple HTML instead. I also plan to add a file cache and use Markdown for input, in order to enable easier contributions.
